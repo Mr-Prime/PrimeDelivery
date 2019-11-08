@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:shimmer="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16.3dp"
+                    android:layout_marginTop="16.3dp"
+                    android:layout_marginRight="16.3dp"
+                    android:background="@drawable/rectangle_gray"
+                    android:orientation="horizontal"
+                    android:paddingLeft="13.7dp"
+                    android:paddingTop="13.3dp"
+                    android:paddingRight="23.3dp"
+                    android:paddingBottom="13.3dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/ic_search" />
+
+                    <EditText
+                        android:id="@+id/lunchbox_et"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15.3dp"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:fontFamily="@font/my_roboto_med"
+                        android:hint="Lunchbox"
+                        android:letterSpacing="0.0525"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/silver"
+                        android:textSize="17.5sp" />
+
+                </LinearLayout>
+
+                <!--Layout Restaurants-->
+                <LinearLayout
+                    android:id="@+id/restaurent_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16.3dp"
+                        android:layout_marginTop="22.3dp"
+                        android:fontFamily="@font/my_roboto_med"
+                        android:text="23 Dishes"
+                        android:textSize="13.3dp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_marginLeft="16.3dp"
+                        android:layout_marginTop="22dp"
+                        android:layout_marginRight="16.3dp"
+                        android:layerType="software"
+                        android:src="@drawable/dotted" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/restaurants_recycle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:overScrollMode="never"
+                        android:paddingLeft="16.3dp"
+                        android:paddingRight="16.3dp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

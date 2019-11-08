@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16.7dp"
+            android:layout_marginRight="16.7dp"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.0525"
+                android:fontFamily="@font/my_roboto_med"
+                android:text="CUISINE's"
+                android:textColor="@color/colorBlack"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.0525"
+                android:text="@string/order_food_from_your_favourite_cuisine_s"
+                  android:textColor="@color/colorBlack"
+                android:textSize="14.3sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="19dp"
+                android:layout_marginRight="16.7dp"
+                android:layerType="software"
+                android:src="@drawable/dotted" />
+            <!--recycler view-->
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/cuisines_recycle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6.3dp"
+                android:clipToPadding="false"
+                android:paddingBottom="16.3dp"
+                android:nestedScrollingEnabled="false"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="9dp"
+    android:paddingBottom="5dp">
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:scaleType="fitXY"/>
+
+
+    <TextView
+        android:id="@+id/outlets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/my_roboto_reg"
+        android:textColor="@color/colorGrey"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"
+        android:letterSpacing="0.0525"/>
+
+    <TextView
+        android:textAllCaps="true"
+        android:id="@+id/chinesses_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/my_roboto_med"
+        android:textColor="@color/colorBlack"
+        android:textSize="17sp"
+        android:letterSpacing="0.0525"/>
+
+</LinearLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    xmlns:shimmer="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@color/colorWhite"
+    android:orientation="horizontal"
+    app:ignore="NamespaceTypo">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/chinesses_img"
+            android:layout_width="79dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="6dp"
+            />
+
+            <FrameLayout
+
+                android:id="@+id/best_Saller"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom">
+
+                <ImageView
+
+                    android:layout_width="92dp"
+                    android:layout_height="30dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/top" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginBottom="4.5dp"
+                    android:fontFamily="@font/my_roboto_med"
+                    android:text="BEST SELLER"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="11sp" />
+            </FrameLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16.8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lunchbox_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/my_roboto_med"
+            android:text="Lunchbox"
+            android:textColor="@color/colorBlack"
+            android:textSize="14.7sp" />
+
+        <TextView
+            android:id="@+id/side_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/my_roboto_med"
+            android:text="North Indian"
+            android:textColor="@color/silver"
+            android:textSize="12.7sp" />
+
+        <TextView
+            android:id="@+id/area_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/my_roboto_med"
+            android:text="New alkaprui"
+            android:textColor="#90959f"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/discount_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rectangle_blue"
+            android:fontFamily="@font/my_roboto_med"
+            android:paddingLeft="10dp"
+            android:paddingTop="3dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:text="GET 30% OFF"
+            android:textColor="@color/colorWhite"
+            android:textSize="11sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="#aeaeae" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8.5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+               android:tint="@color/blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_star_rate" />
+
+            <TextView
+                android:id="@+id/rating_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="6dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/my_roboto_med"
+                android:text="4.6"
+                android:textColor="@color/blue"
+                android:textSize="12.3sp" />
+
+            <TextView
+                android:id="@+id/time_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/my_roboto_med"
+                android:text="Deliver in 20 min."
+                android:textColor="#777779"
+                android:textSize="12.3sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
